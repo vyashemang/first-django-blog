@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>
+    {{posts.title}}
+  </title>
+</head>
+
+<body>
+  {{ posts.title }}
+  <br/>
+  {{ posts.body }}
+
+  <form action="/posts/edit/{{posts.id}}">
+    <input type="submit" value="Edit"/>
+  </form>
+
+</body>
+</html>

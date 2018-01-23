@@ -1,0 +1,26 @@
+<html>
+
+  <head>
+    <title>
+      django blog
+    </title>
+  </head>
+
+  <body>
+
+    <h1>Welcome to the blog</h1>
+    <ul>
+
+        {% for i in posts %}
+        <li>
+          <a href="/posts/read/{{i.id}}"> {{i.title}} </a><br/>
+          {{i.body}}
+
+        </li>
+        {% endfor %}
+
+    </ul>
+
+  </body>
+
+</html>
